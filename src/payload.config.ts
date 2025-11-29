@@ -23,6 +23,7 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
+ secret: process.env.PAYLOAD_SECRET,
     components: {
       // The `BeforeLogin` component renders a message that you see while logging into your admin panel.
       // Feel free to delete this at any time. Simply remove the line below.
